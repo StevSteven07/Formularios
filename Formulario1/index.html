@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario1</title>
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+          crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+<body>
+    <script src="./js/formulario1.js"></script>
+    <h1 class="text-center" style= "background-color: #666;">Formulario #1</h1>
+    <hr>
+    <div class="container text-center">
+        <h2 class="text-center">Generos de Peliculas</h2>
+        <hr>
+        <!--<div class="row">
+            <p class="col-6 lead text-end" style="background-color: red;">Generos: </p><input class="col-6 form-control my-2" id="genero" type="text" placeholder="Terror...">
+
+        </div>  -->
+        <form>
+            <div class="row justify-content-center">
+                <p class="col-4 text-end lead">Generos: </p>
+                <input class="container col-8 form-control" type="text" id="generos" placeholder="Terror...">
+                <button class="btn btn-primary btn-lg" id="boton" type="reset" onclick="capturaDatos()">AGREGAR</button>
+            </div>
+            <hr>
+            <div class="container">
+                <table class="table" style="background-color: #999;" id="tablaDatos">
+                    <thead>
+                        <tr><!--<p style="font-size: 30px;">Listado de Generos</p>--></tr>
+                    </thead>
+                </table>
+
+            </div>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

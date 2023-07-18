@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario2</title>
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+          crossorigin="anonymous"
+    >
+</head>
+<body>
+    <script src="./js/formulario2.js"></script>
+    <h1 class="text-center" style= "background-color: #666;">Formulario #2</h1>
+    <hr>
+    <div class="container text-center">
+        <h2 class="text-center">Formulario de Pedidos</h2>
+        <hr>
+
+    </div>
+    <form>
+        <div class="justify-content-center">
+            <div class="row">
+                <div class="col-2">
+                    <p>Pedido:</p>
+                </div>
+                <div class="col-4">
+                    <input id="pedido" name="pedido" type="text" placeholder="No de pedido" class="form-control" >
+                </div>
+                <div class="col-2">
+                    <p>Cantidad:</p>
+                </div>
+                <div class="col-4">
+                    <input id="cantidad" name="cantidad" type="text" placeholder="Cantidad del producto" class="form-control" >
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <p>Producto:</p>
+                </div>
+                <div class="col-4">
+                    <input id="producto" name="producto" type="text" placeholder="Nombre del producto" class="form-control" >
+                </div>
+                <div class="col-2">
+                    <p>Valor:</p>
+                </div>
+                <div class="col-4">
+                    <input id="valor" name="valor" type="text" placeholder="Valor del producto" class="form-control" >
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-primary btn-lg" id="boton" type="reset" onclick="capturarDatos()">AGREGAR</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <table style="background-color: #999;" id="tablaDatos">
+                <thead>
+                    <div class="row">
+                        <tr><p style="font-size: 30px;">Listado de Pedidos</p></tr>
+                    </div>
+                </thead>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>
